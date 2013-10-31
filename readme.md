@@ -1,3 +1,4 @@
+```javascript
 /*
 quackbaker
 */
@@ -52,3 +53,4 @@ var q = new bakery.Number( 10.5 );
 console.log( q == 10.5 );  //true
 console.log( q === 10.5 ); //false
 console.log( q.valueOf() === 10.5 ); //true
+```
