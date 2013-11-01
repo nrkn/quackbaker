@@ -12,11 +12,8 @@ describe( 'quackbaker', function(){
   
   var mixins = {
     Point: {
-      ctor: function(){
-        return {
-          x: 0,
-          y: 0
-        };
+      ctor: function( point ){
+        point.x = point.y = 0;
       },
       square: function( point ) {
         return {

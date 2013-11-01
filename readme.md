@@ -12,6 +12,9 @@ var interfaces = {
 
 var mixins = {
   Point: {
+    ctor: function( point ){
+      point.x = point.y = 0;
+    },
     square: function( point ){
       return {
         x: point.x * point.x,

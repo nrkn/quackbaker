@@ -13,8 +13,8 @@ var Interfascist = require( 'interfascist' );
       self[ name ] = function( obj ){
         var ctor = this;
         
-        if( _( obj ).isUndefined() && _( self.mixins[ name ].ctor ).isFunction() ){
-          obj = self.mixins[ name ].ctor();
+        if( _( self.mixins[ name ].ctor ).isFunction() ){
+          self.mixins[ name ].ctor( ctor );
         }
         
         if( !_( obj ).isUndefined() && self.validator.validate( obj, name ) ){ 
